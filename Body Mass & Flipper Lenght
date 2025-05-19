@@ -1,0 +1,19 @@
+install.packages(ggplot2)
+install.packages("palmerpenguins")
+library(ggplot2)
+library(palmerpenguins)
+install.packages("ggplot2")
+ggplot(data=penguins,aes(x=flipper_length_mm,y=body_mass_g))+
+  geom_point(aes(color=species))+
+  facet_wrap(~species)
+library(palmerpenguins)
+library("diamonds")
+install.packages("diamonds")
+install.packages("tidyverse")
+data("diamonds")
+library('ggplot2')
+library('diamonds')
+data('palmerpenguins')
+ggplot(data=penguins)+ 
+  geom_point(mapping=aes(x=flipper_length_mm,y=body_mass_g,color=species))+
+  facet_grid(~sex)
